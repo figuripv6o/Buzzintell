@@ -1,0 +1,134 @@
+✅ Recommended structure (clean + professional)
+Copy code
+
+BuzzIntell/
+├─ README.md                  # Executive summary only
+├─ docs/
+│  ├─ architecture/
+│  │  ├─ overview.md          # Architecture narrative (non-legal)
+│  │  └─ diagram.pdf/png      # Visual architecture
+│  ├─ trust/
+│  │  ├─ TRUST_BOUNDARIES.md  # Hard constraints (legal + technical)
+│  │  └─ STRIDE_LITE.md       # Threat model
+│  ├─ compliance/
+│  │  └─ COMPLIANCE_E2E.pdf   # One-page compliance mapping (this)
+│  └─ interface/
+│     └─ SIGNAL_CONTRACT.md   # BuzzIntell ↔ BUZIT interface
+└─ LICENSE
+README should do only 3 things
+What this is
+What it will never be
+Where to find formal documents
+That keeps you investor-safe, regulator-safe, and future-proof.
+1️⃣ One-Page Compliance Mapping (SOC 2 / ISO 27001)
+E2E • What • When • How • Examples
+This is written so it can be exported directly to PDF.
+BuzzIntell — Compliance Alignment (One-Page)
+Scope: BuzzIntell Intelligence Layer
+Out of Scope: Identity, Policy Enforcement, Secrets, Access Control
+Compliance Philosophy: Architectural prevention over procedural controls
+SYSTEM SUMMARY (WHAT)
+BuzzIntell is a non-authoritative intelligence and signal-fusion layer.
+It:
+Observes identity and environmental signals
+Correlates multi-source context
+Emits structured, capability-neutral intelligence
+It does not:
+Authenticate identities
+Grant or deny access
+Enforce policy
+Store or handle secrets
+OPERATIONAL FLOW (WHEN)
+Before access decisions
+Before enforcement
+Before capability execution
+BuzzIntell always precedes authority-bearing systems.
+CONTROL MODEL (HOW)
+Control Area
+Implementation
+Identity
+External Identity Provider
+Authorization
+External Policy Decision Point
+Enforcement
+External Policy Enforcement Point
+Secrets
+External Secrets Manager / HSM
+Intelligence
+BuzzIntell (read-only, no execution)
+Capability
+BUZIT (bounded, post-approval only)
+BuzzIntell never crosses into authority domains.
+SOC 2 ALIGNMENT
+Security
+No credentials handled
+No access paths created
+Reduced blast radius by design
+Availability
+Failure reduces insight only
+No enforcement dependency
+No cascading access failures
+Confidentiality
+Secrets explicitly excluded
+Sensitive fields filtered at ingestion
+Signals contain no credentials
+Processing Integrity
+Deterministic signal generation
+No hidden execution paths
+Clear input → output traceability
+Privacy
+No personal data storage
+No profiling
+No telemetry unless externally enabled
+ISO 27001 ALIGNMENT
+Control Domain
+Alignment
+A.5 Information Security Policies
+Enforced by architectural separation
+A.6 Organization of Security
+Responsibilities clearly segmented
+A.8 Asset Management
+BuzzIntell holds no sensitive assets
+A.9 Access Control
+Fully externalized
+A.12 Operations Security
+Read-only intelligence layer
+A.14 System Acquisition
+Secure-by-design architecture
+A.18 Compliance
+Explicit scope limitation
+EXAMPLES (CONCRETE USE)
+Example 1: Cloud Workload
+BuzzIntell observes workload identity & environment
+Emits risk/context signal
+IAM + PDP decide
+BUZIT executes approved action
+Example 2: BLE / Edge Context
+BuzzIntell correlates proximity + posture
+Emits confidence score
+Gateway enforces
+BuzzIntell never touches device control
+COMPLIANCE OUTCOME
+This architecture:
+Prevents privilege escalation
+Eliminates secret exposure paths
+Enables auditability
+Simplifies compliance scope
+BuzzIntell is compliance-reducing, not compliance-adding.
+📄 Export Note:
+This document is intentionally one page.
+Additional detail lives in architecture and trust-boundary documents.
+2️⃣ What’s next (you choose)
+Now you have two equally strong paths:
+Option A — Visual Storyboard (Commercial, non-hype)
+6–8 frames
+No mysticism
+Clean visuals
+“Insight before action” theme
+Safe for public, investors, and partners
+Option B — Signal Interface Contract (Names + Definitions)
+BuzzIntell → Signal Plane
+BUZIT → Capability Plane
+(2 more you hinted at: Policy Plane, Enforcement Plane)
+Clean vocabulary, no personality bleed
+ 
