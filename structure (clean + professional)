@@ -1,0 +1,14 @@
+BuzzIntell/
+├─ README.md                  # Executive summary only
+├─ docs/
+│  ├─ architecture/
+│  │  ├─ overview.md          # Architecture narrative (non-legal)
+│  │  └─ diagram.pdf/png      # Visual architecture
+│  ├─ trust/
+│  │  ├─ TRUST_BOUNDARIES.md  # Hard constraints (legal + technical)
+│  │  └─ STRIDE_LITE.md       # Threat model
+│  ├─ compliance/
+│  │  └─ COMPLIANCE_E2E.pdf   # One-page compliance mapping (this)
+│  └─ interface/
+│     └─ SIGNAL_CONTRACT.md   # BuzzIntell ↔ BUZIT interface
+└─ LICENSE
