@@ -1,14 +1,18 @@
 BuzzIntell
+
 BuzzIntell is a perception and signal-fusion system.
 It observes identity, context, and environmental signals and transforms them into structured, non-authoritative intelligence for downstream systems.
+
+
 BuzzIntell does not grant access, enforce policy, store secrets, or execute actions.
 It exists solely to see clearly, reason safely, and emit trustworthy signals.
 BuzzIntell is intentionally designed to precede authorization, enforcement, and execution — never to replace them.
 Perception first. Authority elsewhere.
 What BuzzIntell Is
 BuzzIntell operates as an intelligence plane in modern distributed systems.
-It:
-Observes workload identity and environmental context
+
+
+It: Observes workload identity and environmental context
 Correlates signals across domains (runtime, network, BLE, physical context)
 Normalizes and fuses multi-source inputs
 Emits capability-neutral signals
@@ -56,6 +60,8 @@ Transparency of modification
 Preservation of architectural intent
 Disclosure of derivative control logic
 If you are looking for execution, enforcement, or access control — you are in the wrong repository.
+
+
 2️⃣ One-Page Architecture Diagram (Conceptual, No Code)
 Use this exact conceptual flow when you render visuals (static, animated, or video).
 Copy code
