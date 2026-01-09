@@ -1,26 +1,115 @@
-BuzzIntell
+# 🧠 BuzzIntell™  
+**Perception & Signal-Fusion Plane**  
+FDF Certified™ · BuzzFlow E2E · TrustZero Architecture
 
-BuzzIntell is a perception and signal-fusion system.
-It observes identity, context, and environmental signals and transforms them into structured, non-authoritative intelligence for downstream systems.
+**Status:** OFFICIAL · ACTIVE · GOVERNED  
+**Owner:** Fredrick D. Flowers  
+**Entity:** Buzzomatic Intelligence LLC  
 
+---
 
-BuzzIntell does not grant access, enforce policy, store secrets, or execute actions.
-It exists solely to see clearly, reason safely, and emit trustworthy signals.
-BuzzIntell is intentionally designed to precede authorization, enforcement, and execution — never to replace them.
-Perception first. Authority elsewhere.
-What BuzzIntell Is
-BuzzIntell operates as an intelligence plane in modern distributed systems.
+## 🔖 Official Designation
 
+**BuzzIntell™** is the official perception and signal-fusion system within the BuzzWorld™ ecosystem.
 
-It: Observes workload identity and environmental context
-Correlates signals across domains (runtime, network, BLE, physical context)
-Normalizes and fuses multi-source inputs
-Emits capability-neutral signals
-Produces assertions, telemetry, or recommendations only
-BuzzIntell answers one question:
-“What is happening, who is involved, and under what conditions?”
-What BuzzIntell Will Never Be
-BuzzIntell is not:
+It is a **non-authoritative intelligence plane** designed to observe, correlate, and normalize signals **without** granting access, enforcing policy, storing secrets, or executing actions.
+
+BuzzIntell exists to **see clearly**, **reason safely**, and **emit trustworthy signals** — nothing more.
+
+> **Perception first. Authority elsewhere.**
+
+This repository is **architecture-first by design**.  
+Documentation, boundaries, and threat models **precede implementation**.
+
+---
+
+## 🧭 Purpose (Canonical)
+
+BuzzIntell answers exactly one question:
+
+> **“What is happening, who is involved, and under what conditions?”**
+
+It does **not** answer:
+- *What should be allowed*
+- *What should be blocked*
+- *What should be executed*
+
+Those responsibilities belong to **separate systems by design**.
+
+---
+
+## 🧠 What BuzzIntell Is
+
+BuzzIntell operates as an **intelligence plane** in modern distributed systems.
+
+It:
+
+- Observes **workload identity** and **environmental context**
+- Correlates signals across domains:
+  - Runtime
+  - Network
+  - BLE
+  - Physical / proximity context
+- Normalizes heterogeneous inputs
+- Fuses multi-source observations
+- Emits **capability-neutral signals**
+- Produces:
+  - Assertions
+  - Telemetry
+  - Recommendations
+
+BuzzIntell **never emits commands**.
+
+---
+
+## 🚫 What BuzzIntell Will Never Be (Non-Negotiable)
+
+BuzzIntell is **not**:
+
+- An access control system
+- An IAM platform
+- A policy engine (RBAC / ABAC / ACL)
+- A secrets manager or vault
+- A gateway, proxy, or service mesh
+- A surveillance or behavioral monitoring authority
+
+These are **architectural prohibitions**, not configuration choices.
+
+---
+
+## 🧱 Mandatory System Separation
+
+BuzzIntell is permanently separated from authority and execution.
+
+| Layer | Responsibility |
+|-----|----------------|
+| **BuzzIntell** | Observe · Correlate · Signal |
+| **BUZIT** | Execute bounded capabilities *after approval* |
+| **Policy Systems** | Decide allow / deny |
+| **Enforcement Points** | Enforce decisions |
+| **Secrets / HSM** | Hold credentials |
+
+BuzzIntell **never crosses** into any other domain.
+
+---
+
+## 🔐 Security Philosophy (Foundational)
+
+- Intelligence must be **non-authoritative**
+- Capability must be **non-self-authorizing**
+- Secrets must be **inaccessible to perception systems**
+- Enforcement must be **explicit and external**
+
+This architecture prevents:
+
+- Privilege escalation by intelligence systems
+- Hidden execution paths
+- Policy drift embedded in code
+- “Keys to the kingdom” failures
+
+---
+
+## 🔁 Conceptual Architecture (Signals-Only)
 An access control system
 An IAM platform
 A policy engine (RBAC / ABAC / ACL)
