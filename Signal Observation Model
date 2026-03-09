@@ -1,0 +1,15 @@
+BuzzIntell sees events, not systems.
+Examples of observable signals:
+Signal
+Description
+article_published
+blog post released
+audio_generated
+podcast episode created
+radio_segment_live
+broadcast started
+listener_spike
+audience surge detected
+geo_interest
+region showing content demand
+BuzzIntell correlates these signals but never modifies them.
